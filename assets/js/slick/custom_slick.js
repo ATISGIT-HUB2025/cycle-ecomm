@@ -1341,6 +1341,23 @@ $(".product-box-slider-2").slick({
   ],
 });
 
+$(document).ready(function () {
+  $(".slider").slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: "linear",
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: true, // Enable arrows
+    prevArrow:
+      '<button class="slick-prev"><i class="fa-solid fa-chevron-left"></i></button>',
+    nextArrow:
+      '<button class="slick-next"><i class="fa-solid fa-chevron-right"></i></button>',
+  });
+});
+
 $(".product-box-slider").slick({
   infinite: true,
   arrows: true,
