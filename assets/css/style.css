@@ -31788,6 +31788,7 @@ header .offcanvas-backdrop {
   }
   header .offcanvas-collapse .offcanvas-body .navbar-nav .nav-item {
     border-top: 0;
+    padding-bottom: 35px;
   }
   header .offcanvas-collapse .offcanvas-body .navbar-nav .nav-link {
     display: -webkit-box;

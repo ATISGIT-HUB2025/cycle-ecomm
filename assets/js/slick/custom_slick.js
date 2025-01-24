@@ -1359,42 +1359,43 @@ $(document).ready(function () {
 });
 
 $(".product-box-slider").slick({
-  infinite: true,
-  arrows: true,
-  slidesToShow: 5,
-  slidesToScroll: 1,
-  pauseOnHover: true,
-  autoplay: true,
-  dots: true,
+  infinite: true, // Enables infinite scrolling
+  arrows: true, // Displays navigation arrows
+  slidesToShow: 5, // Default number of slides visible
+  slidesToScroll: 1, // Number of slides to scroll per action
+  pauseOnHover: true, // Pauses autoplay when hovered
+  autoplay: true, // Enables autoplay
+  autoplaySpeed: 3000, // Sets autoplay speed (optional)
+  dots: true, // Displays navigation dots
   responsive: [
     {
-      breakpoint: 1680,
+      breakpoint: 1680, // Large screens
       settings: {
-        slidesToShow: 4,
+        slidesToShow: 4, // Show 4 slides
       },
     },
     {
-      breakpoint: 1400,
+      breakpoint: 1400, // Medium screens
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 3, // Show 3 slides
       },
     },
     {
-      breakpoint: 1200,
+      breakpoint: 1200, // Tablets or small laptops
       settings: {
-        slidesToShow: 4,
+        slidesToShow: 3, // Show 3 slides
       },
     },
     {
-      breakpoint: 992,
+      breakpoint: 992, // Smaller tablets or large phones
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 2, // Show 2 slides
       },
     },
     {
-      breakpoint: 660,
+      breakpoint: 660, // Phones
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1, // Show 1 slide
       },
     },
   ],
@@ -1460,28 +1461,27 @@ $(".banner-slider").slick({
   dots: false,
   responsive: [
     {
-      breakpoint: 1387,
+      breakpoint: 1387, // Large screens
       settings: {
         slidesToShow: 3,
       },
     },
     {
-      breakpoint: 966,
+      breakpoint: 1024, // Medium screens (tablets)
       settings: {
         slidesToShow: 2,
       },
     },
     {
-      breakpoint: 34,
-      settings: {
-        slidesToShow: 2,
-      },
-    },
-    {
-      breakpoint: 600,
+      breakpoint: 768, // Small screens (phones in landscape)
       settings: {
         slidesToShow: 1,
-        fade: true,
+      },
+    },
+    {
+      breakpoint: 576, // Extra small screens (phones in portrait)
+      settings: {
+        slidesToShow: 1,
       },
     },
   ],
