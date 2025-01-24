@@ -47,13 +47,15 @@ $(".category-slider").slick({
 });
 
 $(".category-slider-2").slick({
-  arrows: true,
-  infinite: true,
-  slidesToShow: 7,
-  slidesToScroll: 1,
+  arrows: true, // Enable navigation arrows
+  infinite: true, // Enable infinite scrolling
+  slidesToShow: 7, // Default number of slides visible
+  slidesToScroll: 1, // Number of slides to scroll per action
+  dots: false, // Disable dots globally; enabled per breakpoint as needed
+  autoplay: false, // Disable autoplay globally; enabled per breakpoint as needed
   responsive: [
     {
-      breakpoint: 1745,
+      breakpoint: 1745, // Large screens
       settings: {
         slidesToShow: 6,
         dots: true,
@@ -62,25 +64,7 @@ $(".category-slider-2").slick({
       },
     },
     {
-      breakpoint: 1540,
-      settings: {
-        slidesToShow: 5,
-        dots: true,
-        autoplay: true,
-        autoplaySpeed: 2500,
-      },
-    },
-    {
-      breakpoint: 910,
-      settings: {
-        slidesToShow: 4,
-        dots: true,
-        autoplay: true,
-        autoplaySpeed: 2500,
-      },
-    },
-    {
-      breakpoint: 730,
+      breakpoint: 1540, // Medium-large screens
       settings: {
         slidesToShow: 3,
         dots: true,
@@ -89,7 +73,25 @@ $(".category-slider-2").slick({
       },
     },
     {
-      breakpoint: 410,
+      breakpoint: 910, // Medium screens (tablets)
+      settings: {
+        slidesToShow: 4,
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 2500,
+      },
+    },
+    {
+      breakpoint: 730, // Small screens (large phones)
+      settings: {
+        slidesToShow: 3,
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 2500,
+      },
+    },
+    {
+      breakpoint: 410, // Extra-small screens (phones)
       settings: {
         slidesToShow: 2,
         dots: true,
