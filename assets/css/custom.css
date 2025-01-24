@@ -1,3 +1,26 @@
 .top-nav {
   background: #000;
 }
+
+.product-top-desc {
+  position: relative;
+}
+.product-top-desc::after {
+  position: absolute;
+  content: "";
+  z-index: 999;
+  top: -54px;
+  right: -167px;
+  background-image: url(../images/inner-page/3.jpg);
+  background-position: center;
+  width: 150px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1024px) {
+  .product-top-desc::after {
+    display: none;
+  }
+}
